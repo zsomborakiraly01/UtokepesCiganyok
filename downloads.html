@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bíró Zsombor's Installer Hub — Downloads</title>
+  <link rel="stylesheet" href="bs/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="main.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="me-2" viewBox="0 0 16 16">
+          <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+          <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+        </svg>
+        Bíró Zsombor's Installer Hub
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon">&#9776;</span>
+      </button>
+      <div class="navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="main.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="downloads.html">Downloads</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Banner -->
+  <header class="site-header">
+    <div class="container">
+      <h1>Software & Installer Downloads</h1>
+      <p>Download updaters, patch files, and executable installers below.</p>
+    </div>
+  </header>
+
+  <!-- Main Downloads Table Section -->
+  <main class="container py-5">
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 col-lg-10">
+        <input type="text" id="exeSearch" class="form-control form-control-lg mb-4" placeholder="🔍 Search downloads by name or keyword...">
+        
+        <div class="table-responsive">
+          <table class="table align-middle" id="downloadsTable">
+            <thead>
+              <tr>
+                <th>Software / File Name</th>
+                <th>Category</th>
+                <th>Version</th>
+                <th>Description</th>
+                <th>File Size</th>
+                <th class="text-center">Download</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row 1: Forza Horizon 6 Updater -->
+              <tr>
+                <td>
+                  <strong class="text-white">Forza Horizon 6 updater</strong>
+                  <br><small class="text-muted">forza_updater.zip</small>
+                </td>
+                <td><span class="badge bg-primary">Game Bugfix</span></td>
+                <td><code class="text-info">v440.853 to v479.874</code></td>
+                <td>Essential bugfix patch for Forza Horizon 6 stability and graphics fixes.</td>
+                <td><small class="text-muted">142 MB</small></td>
+                <td class="text-center">
+                  <a href="downloads/forza_updater.zip" download="forza_updater.zip" class="btn btn-sm btn-success fw-bold px-3">
+                    Letöltés
+                  </a>
+                </td>
+              </tr>
+
+              <!-- Row 2: Reserved Space for User's Next .exe -->
+              <tr>
+                <td>
+                  <strong class="text-muted">[ Your Next .exe Here ]</strong>
+                  <br><small class="text-muted">installer_slot_2.exe</small>
+                </td>
+                <td><span class="badge bg-secondary">Installer</span></td>
+                <td><code class="text-muted">v1.0.0</code></td>
+                <td>Reserved space for your next software installer or setup executable.</td>
+                <td><small class="text-muted">--</small></td>
+                <td class="text-center">
+                  <a href="#" class="btn btn-sm btn-outline-secondary disabled">Slot Open</a>
+                </td>
+              </tr>
+
+              <!-- Row 3: Reserved Space for Additional Utility -->
+              <tr>
+                <td>
+                  <strong class="text-muted">[ Reserved Slot #3 ]</strong>
+                  <br><small class="text-muted">installer_slot_3.exe</small>
+                </td>
+                <td><span class="badge bg-secondary">Utility</span></td>
+                <td><code class="text-muted">v1.0.0</code></td>
+                <td>Additional open row for game updates, patches, or friend tools.</td>
+                <td><small class="text-muted">--</small></td>
+                <td class="text-center">
+                  <a href="#" class="btn btn-sm btn-outline-secondary disabled">Slot Open</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Instructions for Adding Files -->
+    <div class="row justify-content-center mt-4">
+      <div class="col-12 col-lg-10">
+        <div class="card p-4">
+          <h3 class="h5 text-primary mb-2">💡 How to add your own downloads:</h3>
+          <p class="card-text small mb-2">
+            1. Put your .zip files (e.g. <code>forza_updater.zip</code>) inside the <code>downloads/</code> folder.
+          </p>
+          <p class="card-text small mb-0">
+            2. Open <code>downloads.html</code> in any text editor, duplicate one of the <code>&lt;tr&gt;</code> rows in the table, and update the filename and <code>href="downloads/your_file.zip"</code> attribute!
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="mb-0">© Bíró Zsombor 2026. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
